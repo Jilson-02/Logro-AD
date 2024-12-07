@@ -1,0 +1,7 @@
+{
+  "name": "LogroA-D",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
