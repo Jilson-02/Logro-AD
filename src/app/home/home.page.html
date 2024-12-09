@@ -1,20 +1,39 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Bienvenido a Nuestra App</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" class="ion-padding">
+  <!-- Banner Principal -->
+  <ion-img src="assets/icono.avif" alt="Banner" class="banner"></ion-img>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <!-- Tarjetas de Contenido -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Descubre nuestras funciones</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Con esta aplicación podrás explorar increíbles funcionalidades diseñadas para ti.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>¿Listo para comenzar?</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Pulsa el botón a continuación para explorar todo lo que hemos preparado.
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Botón Principal -->
+  <ion-button expand="block" color="tertiary">
+    Explorar Ahora
+  </ion-button>
+
+  <!-- Enlace Informativo -->
+  <ion-text color="medium">
+    <p class="info-text">¿Quieres saber más? <a href="https://ionicframework.com/docs/components" target="_blank">Visita nuestra documentación</a>.</p>
+  </ion-text>
 </ion-content>

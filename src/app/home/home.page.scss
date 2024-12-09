@@ -1,27 +1,48 @@
-#container {
+/* Ajusta el tamaño y apariencia del banner */
+.banner {
+  width: 50%; /* La imagen ocupa todo el ancho del contenedor */
+  max-height: 300px; /* Limita la altura máxima para que no sea demasiado grande */
+  object-fit: contain; /* Mantiene las proporciones originales sin recortar */
+  border-radius: 15px; /* Esquinas redondeadas */
+  margin: 10px auto; /* Margen para separarla del contenido */
+  display: block; /* Centra la imagen horizontalmente */
+}
+
+/* Tarjetas */
+ion-card {
+  margin: 15px 0; /* Ajusta el espacio vertical entre las tarjetas */
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Más suavidad en las sombras */
+}
+
+/* Texto informativo */
+.info-text {
   text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  margin-top: 25px;
+  font-size: 0.9rem; /* Ajusta el tamaño del texto */
+  line-height: 1.5; /* Mejora la legibilidad */
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+/* Estilo para enlaces */
+a {
+  text-decoration: underline;
+  color: var(--ion-color-primary);
+  font-weight: 600; /* Ligero aumento en el grosor del texto */
+  transition: color 0.3s ease; /* Efecto suave al pasar el cursor */
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+a:hover {
+  color: var(--ion-color-secondary); /* Cambia de color al pasar el cursor */
 }
 
-#container a {
-  text-decoration: none;
+/* Mantener el encabezado fijo en la parte superior */
+ion-header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/* Agregar un margen superior a la imagen del banner */
+.banner {
+  margin-top: 16px;
 }
