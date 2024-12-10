@@ -1,6 +1,6 @@
 /* Ajusta el tamaño y apariencia del banner */
 .banner {
-  width: 50%; /* La imagen ocupa todo el ancho del contenedor */
+  width: 10%; /* La imagen ocupa todo el ancho del contenedor */
   max-height: 300px; /* Limita la altura máxima para que no sea demasiado grande */
   object-fit: contain; /* Mantiene las proporciones originales sin recortar */
   border-radius: 15px; /* Esquinas redondeadas */
@@ -10,10 +10,14 @@
 
 /* Tarjetas */
 ion-card {
-  margin: 15px 0; /* Ajusta el espacio vertical entre las tarjetas */
-  border-radius: 15px;
+  width: 90%; /* Ajusta el ancho al 90% del contenedor padre */
+  max-width: 800px; /* Establece un ancho máximo de 800px */
+  margin: 15px auto; /* Centra horizontalmente y ajusta el margen vertical */
+  border-radius: 15px; /* Esquinas redondeadas */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Más suavidad en las sombras */
+  text-align: center; /* Alinea el texto al centro */
 }
+
 
 /* Texto informativo */
 .info-text {
@@ -21,6 +25,21 @@ ion-card {
   margin-top: 25px;
   font-size: 0.9rem; /* Ajusta el tamaño del texto */
   line-height: 1.5; /* Mejora la legibilidad */
+}
+
+.custom-button {
+  width: auto; /* Ajusta el tamaño automáticamente al contenido */
+  max-width: 400px; /* Elimina límites de ancho */
+  margin: 20px auto; /* Centra el botón horizontalmente */
+  padding: 10px 20px; /* Espaciado interno */
+  font-size: 1rem; /* Tamaño del texto */
+  border-radius: 5px; /* Bordes ligeramente redondeados */
+  color: white; /* Color del texto blanco */
+  border: none; /* Elimina el borde */
+  box-shadow: none; /* Elimina cualquier sombra */
+  display: block; /* Centra el botón horizontalmente */
+  text-align: center; /* Centra el texto dentro del botón */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
 }
 
 /* Estilo para enlaces */
@@ -40,6 +59,7 @@ ion-header {
   position: sticky;
   top: 0;
   z-index: 1;
+  text-align: center;
 }
 
 /* Agregar un margen superior a la imagen del banner */
