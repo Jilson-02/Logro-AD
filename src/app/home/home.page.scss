@@ -22,20 +22,17 @@ ion-card {
 /* Texto informativo */
 .info-text {
   text-align: center;
-  margin-top: 25px;
+  margin: 10px;
   font-size: 0.9rem; /* Ajusta el tamaño del texto */
-  line-height: 1.5; /* Mejora la legibilidad */
+  line-height: 1; /* Mejora la legibilidad */
+  color: antiquewhite;
 }
 
 .custom-button {
-  width: auto; /* Ajusta el tamaño automáticamente al contenido */
   max-width: 400px; /* Elimina límites de ancho */
   margin: 20px auto; /* Centra el botón horizontalmente */
-  padding: 10px 20px; /* Espaciado interno */
-  font-size: 1rem; /* Tamaño del texto */
+  padding: 10px 10px; /* Espaciado interno */
   border-radius: 5px; /* Bordes ligeramente redondeados */
-  color: white; /* Color del texto blanco */
-  border: none; /* Elimina el borde */
   box-shadow: none; /* Elimina cualquier sombra */
   display: block; /* Centra el botón horizontalmente */
   text-align: center; /* Centra el texto dentro del botón */
